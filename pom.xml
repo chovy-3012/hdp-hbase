@@ -78,6 +78,10 @@
       <url>http://repository.apache.org/snapshots/</url>
     </pluginRepository>
     <pluginRepository>
+      <id>hwx-public</id>
+      <url>http://repo.hortonworks.com/content/groups/public/</url>
+    </pluginRepository>
+    <pluginRepository>
       <id>hwx</id>
       <url>http://nexus-private.hortonworks.com/nexus/content/groups/public/</url>
     </pluginRepository>
@@ -420,6 +424,20 @@
     </developer>
   </developers>
   <repositories>
+    <!--hortonworks-->
+    <repository>
+      <id>hwx-releases</id>
+      <url>http://repo.hortonworks.com/content/repositories/releases/</url>
+    </repository>
+    <repository>
+      <id>hwx-public</id>
+      <url>http://repo.hortonworks.com/content/groups/public/</url>
+    </repository>
+    <repository>
+      <id>alimaven</id>
+      <name>aliyun maven</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+    </repository>
     <repository>
       <id>apache release</id>
       <url>https://repository.apache.org/content/repositories/releases/</url>
@@ -817,7 +835,7 @@
             </goals>
         </execution>
     	</executions>
-      </plugin> 
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
